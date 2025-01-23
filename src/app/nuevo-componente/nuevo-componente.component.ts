@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './nuevo-componente.component.css'
 })
 export class NuevoComponenteComponent {
-
+ nuevoComponente = 'titulo del nuevo componente';
 }
