@@ -4,7 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-componente-inline',
   imports: [],
   template: `
-    <h2>{{tituloComponente}}</h2>
+  <div class="container">
+  <h2 class="text-center">{{tituloComponente}}</h2>
+  </div>
+
     <p>
       Fuente mas grande
     </p>
