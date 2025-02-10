@@ -1,0 +1,13 @@
+<h1 class="text-center m-30 text-warning">{{titulo}}</h1>
+<div class="d-flex justify-content-center">
+   
+    <div class="mb-3">
+        <label class="m-3" for="inputTexto">Escribe algo:</label>
+        <input type="text" name="inputTexto" id="inputTexto" (input)="actualizarTexto($event)">
+    </div>
+    <div class="mb-3">
+        <label class="m-3" for="replicarTexto">Texto a replicar:</label>
+        <input type="text" name="replicarTexto" id="replicarTexto"[value]="texto" readonly>
+    </div>
+    
+</div>
