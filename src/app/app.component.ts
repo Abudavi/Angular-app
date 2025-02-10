@@ -4,11 +4,14 @@ import { NuevoComponenteComponent } from "./nuevo-componente/nuevo-componente.co
 import { ComponenteInlineComponent } from "./componente-inline/componente-inline.component";
 import { ComponenteInterpolacionComponent } from "./componente-interpolacion/componente-interpolacion.component";
 import { PadreComponent } from "./padre/padre.component";
-import { HijoComponent } from './padre/hijo/hijo.component';
+import { HijoComponent } from './hijo/hijo.component';
+import { MostrarMensajeComponent } from "./mostrar-mensaje/mostrar-mensaje.component";
+import { ReplicadorComponent } from "./replicador/replicador.component";
+import { SaludoComponent } from "./saludo/saludo.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ ComponenteInlineComponent, ComponenteInterpolacionComponent, PadreComponent],
+  imports: [ SaludoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
