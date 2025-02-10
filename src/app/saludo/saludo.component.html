@@ -1,0 +1,15 @@
+<h1 class="text-center text-warning">{{titulo}}</h1>
+
+<div class="d-flex justify-content-center ">
+
+<div class="w-50">
+    <div class="mb-3  w-50 mx-auto">
+        <label for="inputText mx-3">Escribe algo:</label>
+        <input type="text" name="inputText" id="inputText" [(ngModel)]="saludo" autocomplete="off">
+    </div>
+    <div class="alert alert-success mt-4 mx-auto  w-50">
+        {{saludo}}
+    </div>
+</div>
+
+</div>
