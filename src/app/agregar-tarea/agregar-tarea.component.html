@@ -1,0 +1,20 @@
+<h1 class="text-center text-warning m-10">{{titulo}}</h1>
+
+<div class="coinatiner mt-5 w-50 mx-auto text-center">
+
+    <div class="mb-10">
+        <h2>Agregar Tarea</h2>
+        <input type="text" #inputTarea class="form-control" placeholder="Ingrese la tarea">
+    </div>
+
+    <div class="mt-10">
+
+        <button class="btn btn-primary mt-2" (click)="agregarTarea(inputTarea.value); inputTarea.value==''">Agregar</button>
+    </div>
+    <div class="m-3">
+        @if(tarea){
+            <p>{{tarea}}</p>
+        }
+    </div>
+
+</div>
