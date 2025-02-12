@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './component-if.component.css'
 })
 export class ComponentIfComponent {
+  titulo = " Directiva if en Angular";
+  autentificador: boolean = false;
 
+  invertirAutentificador(): void {
+
+    this.autentificador = !this.autentificador;
+  }
 }
