@@ -1,1 +1,13 @@
-<p>componente-for works!</p>
+<h1 class="text-center text-warning">{{titulo}}</h1>
+
+<div class=" text-center list-group w-50 mx-auto">
+    <h2>Lista de tareas</h2>
+    <ul>
+        @for (tarea of tareas; track tarea) {
+            <li class="list-group-item">{{tarea}}</li>
+        }
+    </ul>
+    <input type="text" #tarea id="tarea" class="form-control" placeholder="Escribe una tarea" >
+    <button class="btn btn-primary mt-2" (click)="agregarTarea(tarea.value)">Agregar tarea</button>
+
+</div>
