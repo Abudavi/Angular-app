@@ -10,10 +10,11 @@ import { ReplicadorComponent } from "./replicador/replicador.component";
 import { SaludoComponent } from "./saludo/saludo.component";
 import { ComponentIfComponent } from "./component-if/component-if.component";
 import { AgregarTareaComponent } from "./agregar-tarea/agregar-tarea.component";
+import { ComponenteForComponent } from './componente-for/componente-for.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ AgregarTareaComponent],
+  imports: [ ComponenteForComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
