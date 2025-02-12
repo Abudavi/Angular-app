@@ -8,10 +8,11 @@ import { HijoComponent } from './hijo/hijo.component';
 import { MostrarMensajeComponent } from "./mostrar-mensaje/mostrar-mensaje.component";
 import { ReplicadorComponent } from "./replicador/replicador.component";
 import { SaludoComponent } from "./saludo/saludo.component";
+import { ComponentIfComponent } from "./component-if/component-if.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ SaludoComponent],
+  imports: [ComponentIfComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
