@@ -14,7 +14,7 @@ import { ComponenteForComponent } from './componente-for/componente-for.componen
 
 @Component({
   selector: 'app-root',
-  imports: [ ComponenteForComponent],
+  imports: [ PadreComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
