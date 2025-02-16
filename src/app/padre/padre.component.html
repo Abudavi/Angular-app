@@ -1,8 +1,5 @@
-<div class="container d-flex justify-content-center align-items-center  flex-column"> 
+<div class="container d-flex justify-content-center align-items-center  flex-column">
     <h1 class="text-center text-warning mt-3">Componente padre</h1>
-    <app-hijo  (notificarPadre)="recibirMensaje($event)"></app-hijo>
-    <div class="alert alert-info text-center mt-3">
-        <p>{{mensaje}}</p>
-    </div>
+    <app-hijo></app-hijo>
+    <button type="button" class="btn btn-success" (click)="cambiarMensajeHijo()">Cambiar mensaje del hijo</button>
 </div>
-
