@@ -15,7 +15,7 @@ import { ViewChildComponent } from "./view-child/view-child.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ ViewChildComponent],
+  imports: [PadreComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
