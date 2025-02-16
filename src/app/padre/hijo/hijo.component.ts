@@ -9,8 +9,10 @@ import { Component, Output,EventEmitter } from '@angular/core';
 export class HijoComponent {
  
 @Output() notificarPadre = new EventEmitter<string>();
+mensaje:string="Mensaje desde el componente hijo";
 
-enviarMensaje(){
-  this.notificarPadre.emit('hola desde el componente hijo')
+cambiarMensaje(nuevoMensaje:string){
+this.mensaje=nuevoMensaje;
 }
+
 }
